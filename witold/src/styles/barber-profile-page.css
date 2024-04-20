@@ -1,226 +1,245 @@
-.barber-profile-page {
-    padding: 4rem 0;
-    background-color: #f5f5f5;
-  }
-  
-  .barber-profile-page-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  
-  .barber-profile-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .barber-profile-header h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .barber-profile-header p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #555;
-  }
-  
-  .barber-profile-services {
-    margin-bottom: 3rem;
-  }
-  
-  .barber-profile-services h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .barber-profile-services ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2rem;
-  }
-  
-  .barber-profile-services li {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  .barber-profile-services h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .barber-profile-services p {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #555;
-  }
-  
-  .barber-profile-timeslots {
-    margin-bottom: 3rem;
-  }
-  
-  .barber-profile-timeslots h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .barber-profile-timeslots ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 1.5rem;
-  }
-  
-  .barber-profile-timeslots li {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .barber-profile-timeslots button {
-    display: block;
-    width: 100%;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .barber-profile-timeslots button:hover {
-    background-color: #efc8a3;
-  }
-  
-  .barber-profile-timeslots button.selected {
-    background-color: #efc8a3;
-    color: #000000;
-  }
-  
-  .barber-profile-booking,
-  .barber-profile-booking-confirmation,
-  .barber-profile-booking-error {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .barber-profile-booking h2,
-  .barber-profile-booking-confirmation h2,
-  .barber-profile-booking-error h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .barber-profile-booking p,
-  .barber-profile-booking-confirmation p,
-  .barber-profile-booking-error p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .barber-profile-booking button {
-    display: block;
-    margin: 0 auto;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 1rem 2.5rem;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .barber-profile-booking button:hover {
-    background-color: #efc8a3;
-  }
-  
-  .barber-profile-booking-confirmation {
-    border: 2px solid #4CAF50;
-  }
-  
-  .barber-profile-booking-error {
-    border: 2px solid #F44336;
-  }
-  
-  @media (max-width: 768px) {
-    .barber-profile-page-content {
-      padding: 0 1rem;
-    }
-  
-    .barber-profile-header h1 {
-      font-size: 2.4rem;
-    }
-  
-    .barber-profile-header p {
-      font-size: 1.4rem;
-    }
-  
-    .barber-profile-services h2,
-    .barber-profile-timeslots h2,
-    .barber-profile-booking h2,
-    .barber-profile-booking-confirmation h2,
-    .barber-profile-booking-error h2 {
-      font-size: 1.8rem;
-    }
-  
-    .barber-profile-services li,
-    .barber-profile-timeslots li {
-      padding: 1rem;
-    }
-  
-    .barber-profile-services h3 {
-      font-size: 1.4rem;
-    }
-  
-    .barber-profile-services p,
-    .barber-profile-booking p,
-    .barber-profile-booking-confirmation p,
-    .barber-profile-booking-error p {
-      font-size: 1.4rem;
-    }
-  
-    .barber-profile-timeslots button {
-      font-size: 1.2rem;
-      padding: 0.6rem 1.2rem;
-    }
-  
-    .barber-profile-booking button {
-      font-size: 1.2rem;
-      padding: 0.8rem 2rem;
-    }
-  }
+.barber-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.barber-profile-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.barber-profile-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.barber-profile-services h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.barber-profile-service-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.barber-profile-service-item {
+  width: 200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.barber-profile-service-item:hover {
+  background-color: #eaeaea;
+}
+
+.barber-profile-service-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.barber-profile-service-item p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.barber-profile-available-timeslots {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.barber-profile-available-timeslots li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.barber-profile-available-timeslots li:hover {
+  background-color: #eaeaea;
+}
+
+.barber-profile-booking {
+  margin-top: 20px;
+}
+
+.barber-profile-booking-input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.barber-profile-booking-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.barber-profile-booking-button:hover {
+  background-color: #0056b3;
+}
+
+.barber-profile-booking-confirmation,
+.barber-profile-busy-dates,
+.barber-profile-booking-error {
+  margin-top: 20px;
+}
+
+.barber-profile-busy-dates h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.barber-profile-busy-dates ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.barber-profile-busy-dates li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  margin: 0 10px 10px 0;
+}
+
+.barber-profile-busy-dates li:hover {
+  background-color: #eaeaea;
+}
+
+.barber-profile-booking-error {
+  color: #dc3545;
+}
+
+.barber-profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.barber-profile-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.barber-profile-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.barber-profile-services h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.barber-profile-service-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.barber-profile-service-item {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.barber-profile-service-item:hover {
+  background-color: #eaeaea;
+}
+
+.barber-profile-service-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+
+.barber-profile-service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: filter 0.3s ease-in-out;
+}
+
+.barber-profile-service-item:hover img {
+  filter: blur(5px); /* Blur image on hover */
+}
+
+.barber-profile-service-item .service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255); /* Initial text color */
+  text-shadow: 1px 1px 1px black;
+  transition: color 0.3s ease-in-out; /* Transition for text color */
+}
+
+.barber-profile-service-item:hover .service-overlay {
+  color: rgb(0, 0, 0); /* Change text color to black on hover */
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.barber-profile-service-item p {
+  font-size: 1.2rem;
+  color: #ffffff; /* Initial text color */
+  text-shadow: 1px 1px 1px black;
+  transition: color 0.3s ease-in-out; /* Transition for text color */
+}
+
+.barber-profile-service-item:hover p{
+  color: #000000; /* Change text color to black on hover */
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.barber-profile-photo {
+  margin-bottom: 20px;
+}
+
+.barber-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}

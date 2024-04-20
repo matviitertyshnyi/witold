@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { mockBarbers } from '../mockData';
 
-
 const BarberListPage = () => {
   return (
     <div>
@@ -13,15 +12,17 @@ const BarberListPage = () => {
             {mockBarbers.map((barber) => (
               <li key={barber.id} className="barber-card">
                 <Link to={`/barber/${barber.id}`}>
-                  <h2>{barber.name}</h2>
-                  <p>{barber.description}</p>
+                  <img src={barber.photoUrl} alt={barber.name} className="barber-image" />
+                  <div>
+                    <h2>{barber.name}</h2>
+                    <p>{barber.description}</p>
+                  </div>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
-
     </div>
   );
 };

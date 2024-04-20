@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import BarberListPage from './pages/BarberListPage'; // Use BarberListPage instead of BarberList
+import BarberListPage from './pages/BarberListPage'; 
 import BarberProfilePage from './pages/BarberProfilePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -14,8 +14,8 @@ import './styles/global.css';
 import './styles/navbar.css';
 import './styles/footer.css';
 import './styles/home-page.css';
-import './styles/barber-list-page.css';
 import './styles/barber-profile-page.css';
+import './styles/barber-list-page.css';
 import './styles/login-page.css';
 import './styles/register-page.css';
 
